@@ -17,6 +17,7 @@
 		</div>
 
 		<div class="well" ng-repeat="doctor in doctors | filter:searchBox">
+		<!-- With more time, would like to add some logic to prioritizing search results by rating. For example, show the highest rated doctors first when searching within Los Angeles -->
 			<strong>Name:</strong> Dr. {{ doctor.Name }}<br />
 			<strong>Specialty:</strong> {{ doctor.Specialty }}<br />
 			<strong>Area:</strong> {{ doctor.Area }}<br />
