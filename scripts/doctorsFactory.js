@@ -1,7 +1,7 @@
 angular
 	.module('ngDoctors')
 	.factory('doctorsFactory', function() {
-
+		// using a factory to be more modular for the future, can add/delete entries
 		var doctorsData = [
 			{
 				"Name": "House",
@@ -76,10 +76,11 @@ angular
 
 		function getDoctors() {
 			return doctorsData;
+			// factory function to get the data
 		}
 
 		return {
 			getDoctors: getDoctors
 		}
-
+		// calls the function
 	});
